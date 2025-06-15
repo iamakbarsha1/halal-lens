@@ -11,7 +11,7 @@ pub fn Echo() -> Element {
         document::Link { rel: "stylesheet", href: ECHO_CSS }
         div {
             id: "echo",
-            h4 { "ServerFn Echo" }
+            h4 { "ServerFn Echo Bismillah" }
             input {
                 placeholder: "Type here to echo...",
                 oninput:  move |event| async move {
