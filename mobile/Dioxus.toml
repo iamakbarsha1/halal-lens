@@ -1,0 +1,30 @@
+# Dioxus.toml
+[application]
+name = "HalalLens"
+default_platform = "ios"
+out_dir = "dist"
+
+[web.app]
+title = "HalalLens"
+
+[bundle]
+identifier = "com.akbarshalabs.halallens"
+version = "0.1.0"
+short_description = "HalalLens - Halal Food Scanner"
+long_description = "A mobile app to scan and verify halal food products"
+
+[bundle.ios]
+# Minimum iOS version
+deployment_target = "15.0"
+# App display name
+display_name = "HalalLens"
+# Supported device families: 1 = iPhone, 2 = iPad
+device_family = [1, 2]
+# Required device capabilities
+required_device_capabilities = ["metal"]
+# Supported orientations
+supported_orientations = [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationLandscapeLeft", 
+    "UIInterfaceOrientationLandscapeRight"
+]
